@@ -1,0 +1,139 @@
+@import "../src/Scss/variables.scss";
+
+.navbar {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: $--color-black;
+  padding: 0.625rem 5.625rem;
+  z-index: 20;
+
+  .navbar__logo {
+    margin-right: 1.875rem;
+  }
+
+  .navbar__list {
+    align-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    gap: 1.875rem;
+    list-style: none;
+    font-size: 14px;
+  }
+}
+
+.banner {
+  padding: 179px 5.625rem;
+  width: 100vw;
+  height: 630px;
+  color: white;
+
+  .banner__vertical {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+
+    .banner__vertical-hashtag {
+      font-size: 16px;
+      font-weight: 700;
+      position: absolute;
+      left: 10px;
+      top: 198px;
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+
+    .banner__vertical-text {
+      font-family: 'Montserrat';
+      font-size: 64px;
+      font-weight: 700;
+      position: absolute;
+      color: $--color-primary;
+      text-shadow: 0px 0 $--color-secondary, 0px 0 $--color-secondary, -1px 0px $--color-secondary, 0 0px $--color-secondary,
+               0px 0px $--color-secondary, 1px 0px $--color-secondary, 0px 0px $--color-secondary, 0px 0px $--color-secondary;
+      left: 60px;
+      top: 60px;
+      text-transform: uppercase;
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+
+    .banner__vertical-line {
+      position: absolute;
+      top: -262px;
+      left: 120px;
+    }
+  }
+
+  .banner__info {
+    width: 27.625rem;
+    margin-left: 13rem;
+
+    .banner__info-span {
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .banner__info-text {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 1.875rem;
+    }
+  }
+}
+
+footer {
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: $--color-black;
+  z-index: 10;
+
+  .footer__content-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+    padding: 2.5rem 5.625rem;
+    background-color: lighten($--color-black, 10);
+  
+    a {
+      border-bottom: 0;
+    }
+  }
+
+  .footer__content-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    color: $--color-primary;
+    background-color: $--color-secondary;
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+}
+
+.footer__content {
+  padding: 7.5rem 5.625rem;
+
+  .footer__col-item {
+    margin-bottom: 1.875rem;
+
+    h2 {
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: -4px 0;
+    }
+  }
+}
+
+
