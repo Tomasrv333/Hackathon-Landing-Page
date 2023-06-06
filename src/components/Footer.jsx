@@ -1,9 +1,23 @@
+import downloadIcon1 from "../assets/icons/footer/downloadIcon1.svg";
+import downloadIcon2 from "../assets/icons/footer/downloadIcon2.svg";
+import downloadIcon3 from "../assets/icons/footer/downloadIcon3.svg";
+import footerIcon1 from "../assets/icons/footer/footerIcon1.svg";
+import footerIcon2 from "../assets/icons/footer/footerIcon2.svg";
+import footerIcon3 from "../assets/icons/footer/footerIcon3.svg";
+import footerIcon4 from "../assets/icons/footer/footerIcon4.svg";
+import facebookIcon from "../assets/icons/socialMedia/facebookIcon.svg";
+import twitterIcon from "../assets/icons/socialMedia/twitterIcon.svg";
+import instagramIcon from "../assets/icons/socialMedia/instagramIcon.svg";
+import youtubeIcon from "../assets/icons/socialMedia/youtubeIcon.svg";
+import tiktokIcon from "../assets/icons/socialMedia/tiktokIcon.svg";
+import linkedinIcon from "../assets/icons/socialMedia/linkedinIcon.svg";
+
 
 const Footer = () => {
   return (
     <footer className="footer">
-        <div className='footer__content row'>
-            <div className="col">
+        <div className='footer__content'>
+            <div className="footer__col">
                 <div className="footer__col-item">
                     <h2>Servicios</h2>
                     <ul>
@@ -45,7 +59,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-            <div className="col">
+            <div className="footer__col">
                 <div className="footer__col-item">
                     <h2>Contáctanos</h2>
                     <p>Sede principal</p>
@@ -71,7 +85,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="col">
+            <div className="footer__col">
                 <div className="footer__col-item">
                     <h2>Otros links</h2>
                     <ul>
@@ -88,20 +102,42 @@ const Footer = () => {
                 </div>
                 <div className="footer__col-item">
                     <h2>App Conductor</h2>
+                    <div className="footer__col-item--icons d-flex">
+                        <img src={downloadIcon1} alt="" />
+                        <img src={downloadIcon2} alt="" />
+                    </div>
                 </div>
                 <div className="footer__col-item">
                     <h2>App Viajero</h2>
+                    <div className="footer__col-item--icons d-flex">
+                        <img src={downloadIcon1} alt="Disponible en Google Play" />
+                        <img src={downloadIcon2} alt="Disponible en AppGallery" />
+                        <img src={downloadIcon3} alt="Disponible en App Store" />
+                    </div>
                 </div>
             </div>
-            <div className="col">
-                <h2>Hola</h2>
+            <div className="footer__col-icons">
+                <img src={footerIcon1} alt="Ministerio de transporte" />
+                <img src={footerIcon2} alt="Agencia nacional de seguridad vial" />
+                <img src={footerIcon3} alt="Industria y comercio" />
+                <img src={footerIcon4} alt="SuperTransporte" />
             </div>
         </div>
         <div className="footer__content-bottom">
-            <img src="src/assets/NavLogo.svg" />
-            <a href="">Aviso legal página web</a>
-            <a href="">Política de Tratamientos de Datos</a>
-            <a href="">Aviso legal</a>
+            <div>
+                <img src="src/assets/NavLogo.svg" />
+                <a href="">Aviso legal página web</a>
+                <a href="">Política de Tratamientos de Datos</a>
+                <a href="">Aviso legal</a>
+            </div>
+            <div>
+                <img src={facebookIcon} alt="facebook" />
+                <img src={twitterIcon} alt="twitter" />
+                <img src={instagramIcon} alt="instagram" />
+                <img src={youtubeIcon} alt="youtube" />
+                <img src={tiktokIcon} alt="tiktok" />
+                <img src={linkedinIcon} alt="linkedin" />
+            </div>
         </div>
         <div className="footer__content-copyright">
             <p>© 2023 Taxis Libres.</p>

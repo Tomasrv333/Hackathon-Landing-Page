@@ -1,7 +1,11 @@
 import './App.scss'
-import Banner from './components/Banner'
-import Footer from './components/Footer'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import Banner from './pages/Home/Banner.jsx'
+import Form from './pages/Home/Form.jsx'
+import Info from './pages/Home/Info.jsx'
+import Partners from './pages/Home/Partners.jsx'
+import Reward from './pages/Home/Reward.jsx'
 
 function App() {
 
@@ -9,6 +13,10 @@ function App() {
     <>
       <Header/>
       <Banner/>
+      <Info/>
+      <Partners/>
+      <Reward/>
+      <Form/>
       <Footer/>
     </>
   )
