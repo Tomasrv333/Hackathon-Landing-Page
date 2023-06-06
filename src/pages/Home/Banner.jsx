@@ -1,5 +1,5 @@
 import figureInfo2 from "../../assets/figures/figureInfo2.svg";
-import Clock from "../../components/countdown";
+import Clock from "../../components/Countdown";
 
 const Banner = () => {
     let deadline = "June, 10, 2023";
@@ -32,7 +32,9 @@ const Banner = () => {
                 </div>
             </div>
             <p className="banner__info-text">¡La Hackathon es el escenario perfecto para poner a prueba la creatividad y lograr llevar las ideas al siguiente nivel!</p>
-            <Clock className="banner__info-gadgets--mobile" deadline={deadline} />
+            <div className="banner__info-gadgets--mobile">
+                <Clock deadline={deadline} />
+            </div>
             <button className="btn--primary" style={{ marginBottom: "1.875rem" }}><a style={{ border: "none" }} href="#form">Inscribete gratis!</a></button>
             <div className="banner__info-figure--mobile">
                 <img src={figureInfo2} alt="" />

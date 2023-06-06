@@ -113,6 +113,10 @@
   
       .banner__info-gadgets {
         margin: 1.25rem 0;
+
+        .banner__info-gadgets--mobile {
+          display: none;
+        }
   
         p {
           font-size: 14px;
