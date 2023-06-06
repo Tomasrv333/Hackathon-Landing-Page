@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "../assets/NavLogo.svg";
 import iconMenu from "../assets/icons/icon-menu.svg";
 import iconMenuClose from "../assets/icons/icon-menu-close.svg";
 
@@ -16,7 +17,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="d-flex align-middle">
             <a href="#banner" style={{ border: "none" }}>
-              <img className="navbar__logo" src="src/assets/NavLogo.svg"/>
+              <img className="navbar__logo" src={Logo} />
             </a>
             <ul className="navbar__list d-flex">
               <li className="navbar__list-item"><a href="#info">Información</a></li>

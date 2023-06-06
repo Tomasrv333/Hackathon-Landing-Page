@@ -11,6 +11,7 @@ import instagramIcon from "../assets/icons/socialMedia/instagramIcon.svg";
 import youtubeIcon from "../assets/icons/socialMedia/youtubeIcon.svg";
 import tiktokIcon from "../assets/icons/socialMedia/tiktokIcon.svg";
 import linkedinIcon from "../assets/icons/socialMedia/linkedinIcon.svg";
+import Logo from "../assets/NavLogo.svg";
 
 
 const Footer = () => {
@@ -132,7 +133,7 @@ const Footer = () => {
             </div>
             <div className="footer__content-bottom">
                 <div className="footer__bottom-text">
-                    <img className="footer__text-img" src="src/assets/NavLogo.svg" />
+                    <img className="footer__text-img" src={Logo} />
                     <a href="">Aviso legal página web</a>
                     <a href="">Política de Tratamientos de Datos</a>
                     <a href="">Aviso legal</a>
