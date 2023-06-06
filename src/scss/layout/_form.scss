@@ -1,0 +1,39 @@
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.5rem 0;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../src/assets/figures/formBackground.svg");
+
+  form {
+    width: 30.125rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and ($--query-mobile) {
+    padding: 7.875rem 5rem;
+    background-image: url("../src/assets/formBackground--mobile.svg");
+
+    form {
+      width: 16.375rem;
+
+      .form__input--mobile {
+        flex-direction: column;
+        gap: 0 !important;
+      }
+
+      .form__checkbox {
+        margin: 0;
+        margin-bottom: 1.25rem !important;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}

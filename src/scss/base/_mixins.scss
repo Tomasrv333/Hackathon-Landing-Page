@@ -1,0 +1,5 @@
+$--query-mobile: "(max-width: 450px)";
+
+@mixin media($--query-mobile) {
+    @content;
+}

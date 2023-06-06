@@ -1,0 +1,143 @@
+footer {
+  color: white;
+  background-color: $--color-black;
+
+  .footer__content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 5.625rem;
+    background-color: lighten($--color-black, 10);
+  
+    a {
+      padding: 0 1.25rem;
+      border-bottom: 0;
+    }
+
+    img {
+      padding: 0 0.625rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+
+    @media only screen and ($--query-mobile) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      a {
+        padding: 0;
+        margin-bottom: 1.25rem;
+      }
+
+      .footer__bottom-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.25rem;
+      }
+
+      .footer__text-img {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 1.25rem;
+      }
+
+      .footer__bottom-icons {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .footer__content-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    color: $--color-primary;
+    background-color: $--color-secondary;
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+}
+
+.footer__content {
+  display: flex;
+  padding: 7.5rem 5.625rem;
+  position: relative;
+
+  .footer__col {
+    width: 14rem;
+    position: relative;
+  }
+
+  .footer__col-item {
+    margin-bottom: 1.875rem;
+
+    h2 {
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: -4px 0;
+    }
+  }
+
+  .footer__col-item--icons {
+    img {
+      padding: 0 0.313rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .footer__col-icons {
+    position: absolute;
+    height: 65%;
+    right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid white;
+    padding-left: 5.625rem;
+    margin-left: 1.563rem;
+
+    img {
+      margin-bottom: 1.875rem;
+    }
+  }
+
+  @media only screen and ($--query-mobile) {
+    display: none;
+  }
+
+  @media only screen and ($--query-desktop) {
+
+  }
+}
+
+.footer__content--mobile {
+  padding: 5.625rem 3.75rem;
+
+  h3 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  @media only screen and ($--query-desktop) {
+    display: none;
+  }
+}

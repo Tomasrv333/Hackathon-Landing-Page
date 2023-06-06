@@ -1,4 +1,4 @@
-import './App.scss'
+import './scss/App.scss'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Banner from './pages/Home/Banner.jsx'

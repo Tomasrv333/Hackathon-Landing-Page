@@ -1,0 +1,118 @@
+.info {
+  overflow: hidden;
+  display: flex;
+  padding: 0 5.625rem;
+
+  .info__side {
+    min-width: 7.375rem;
+    padding-right: 1.875rem;
+    margin-right: 5.625rem;
+    border-right: 1px solid $--color-secondary;
+    position: relative;
+
+    .info__side-content {
+      padding: 7.5rem 0;
+      position: relative;
+    }
+
+    .info__side-icons {
+      position: relative;
+      width: fit-content;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        margin-bottom: 1.875rem;
+      }
+    }
+
+    .info__side-figure {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .info__content-col {
+    position: relative;
+  }
+
+  .info__content {
+    display: flex;
+    position: relative;
+    padding: 7.5rem 0;
+  }
+
+  @media only screen and ($--query-mobile) {
+    width: 100%;
+    padding: 0 4.313rem;
+    
+    .info__side {
+      display: none;
+    }
+
+    .info__content {
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .info__content-col {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5.625rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info__content-text {
+      width: 77.5%;
+      position: absolute;
+      top: 1.875rem;
+      left: 2.5rem;
+      right: 1.875rem;
+    }
+
+    .info__content-text--mobile {
+      margin-top: 3.75rem;
+    }
+
+    .info__figure-icon {
+      display: none;
+    }
+
+    .info__figure-text {
+      display: none;
+    }
+
+    .info__figure-text--mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .info__figure {
+      display: none;
+    }
+  }
+
+  @media only screen and ($--query-desktop) {
+    .info__content-col {
+      padding-right: 10%;
+    }
+
+    .info__content-text {
+      width: 25rem;
+      position: absolute;
+      top: 3.75rem;
+      right: 0;
+      left: 5rem;
+      bottom: 0;
+    }
+  }
+}

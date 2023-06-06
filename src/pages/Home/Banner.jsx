@@ -27,11 +27,14 @@ const Banner = () => {
                         <p className="m-0">Fecha: 10 / 06 / 2023</p>
                     </div>
                 </div>
-                <Clock deadline={deadline} />
+                <div className="banner__info-gadgets--desktop">
+                    <Clock deadline={deadline} />
+                </div>
             </div>
             <p className="banner__info-text">¡La Hackathon es el escenario perfecto para poner a prueba la creatividad y lograr llevar las ideas al siguiente nivel!</p>
+            <Clock className="banner__info-gadgets--mobile" deadline={deadline} />
             <button className="btn--primary" style={{ marginBottom: "1.875rem" }}><a style={{ border: "none" }} href="#form">Inscribete gratis!</a></button>
-            <div className="">
+            <div className="banner__info-figure--mobile">
                 <img src={figureInfo2} alt="" />
             </div>
         </div>

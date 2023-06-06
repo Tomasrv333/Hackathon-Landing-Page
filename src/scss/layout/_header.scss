@@ -1,0 +1,85 @@
+@import "../base/variables";
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: $--color-black;
+    padding: 1.25rem 5.625rem;
+    z-index: 10;
+  
+    .navbar__logo {
+      margin-right: 1.875rem;
+    }
+
+    .navbar__menu {
+        display: none;
+    }
+
+    @media only screen and ($--query-mobile) {
+        padding: 1.25rem 1.875rem;
+
+        .navbar__logo {
+            margin: 0;
+        }
+
+        .navbar__list {
+            display: none !important;
+        }
+
+        .navbar__list--mobile {
+            position: absolute;
+            top: 82px;
+            left: 0;
+            right: 0;
+            background-color: $--color-secondary;
+            flex-direction: column;
+            align-items: start;
+            padding: 0.625rem 1.875rem;
+            transition: height 2s ease;
+
+            .navbar__list-item--mobile {
+                width: 100%;
+                color: $--color-primary;
+                padding: 1.25rem 0;
+                border-bottom: 1px solid $--color-primary;
+        
+                &:last-child {
+                    border: none;
+                }
+
+                a {
+                    border: none;
+                }
+            }
+        }
+
+        .navbar__btn {
+            display: none;
+        }
+        .navbar__menu {
+            display: block;
+        }
+    }
+
+    @media only screen and ($--query-desktop) {
+        .navbar__list {
+            align-items: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px;
+      
+            li {
+              padding: 0 0.625rem;
+            }
+          
+            a {
+              border: none;
+              font-size: 14px;
+            }
+        }
+    }
+}

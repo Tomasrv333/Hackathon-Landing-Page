@@ -2,6 +2,7 @@ import figureInfo1 from "../../assets/figures/figureInfo1.svg";
 import figureIcon4 from "../../assets/figures/figureIcon5.svg";
 import figureIcon from "../../assets/figures/figureIcon.svg";
 import figureBox from "../../assets/figures/figureBox.svg";
+import figureBoxMobile from "../../assets/figures/figureBox--mobile.svg";
 import facebookIcon from "../../assets/icons/socialMedia/facebookIcon.svg";
 import twitterIcon from "../../assets/icons/socialMedia/twitterIcon.svg";
 import instagramIcon from "../../assets/icons/socialMedia/instagramIcon.svg";
@@ -28,7 +29,7 @@ const Info = () => {
             </div>
         </div>
         <div className="info__content">
-            <div className="info__content-col" style={{ paddingRight: "10%" }}>
+            <div className="info__content-col">
                 <img src={figureInfo1} alt="" style={{ marginBottom: "1.875rem" }} />
                 <div>
                     <h3>¿Dónde?</h3>
@@ -42,16 +43,26 @@ const Info = () => {
                     <h3>¿Quién puede participar?</h3>
                     <p>Ingenieros, programadores, diseñadores, comunicadores, analistas de datos y muchos más perfiles.</p>
                 </div>
-                <img src={figureIcon4} alt="" style={{ marginTop: "1.875rem" }} />
+                <div className="info__figure-icon">
+                    <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
+                </div>
             </div>
             <div className="info__content-col">
                 <div className="info__content-text">
                     <h2>¿Porqué una Hackathon?</h2>
                     <p>Al organizar una Hackathon, buscamos impulsar la resolución de problemas de manera ágil y eficiente, promoviendo la experimentación y el pensamiento fuera de lo común. </p>
-                    <p>Nuestro objetivo es desafiar a los participantes a superar sus límites, explorar nuevas tecnologías y trabajar en equipo para crear proyectos innovadores que puedan impactar positivamente en nuestra empresa y en la industria en general.</p>
+                    <div className="info__figure-text">
+                        <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
+                        <p className="info__content-text--mobile">Nuestro objetivo es desafiar a los participantes a superar sus límites, explorar nuevas tecnologías y trabajar en equipo para crear proyectos innovadores que puedan impactar positivamente en nuestra empresa y en la industria en general.</p>
+                    </div>
                 </div>
                 <div className="info__content-figure">
-                    <img src={figureBox} alt="" />
+                    <img className="info__figure" src={figureBox} alt="" />
+                    <img className="info__figure--mobile" src={figureBoxMobile} alt="" />
+                </div>
+                <div className="info__figure-text--mobile">
+                    <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
+                    <p className="info__content-text--mobile">Nuestro objetivo es desafiar a los participantes a superar sus límites, explorar nuevas tecnologías y trabajar en equipo para crear proyectos innovadores que puedan impactar positivamente en nuestra empresa y en la industria en general.</p>
                 </div>
             </div>
         </div>
