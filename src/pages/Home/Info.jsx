@@ -37,7 +37,7 @@ const Info = () => {
                 </div>
                 <div>
                     <h3>¿Cuándo?</h3>
-                    <p>El día 10 de junio desde las 10am hasta las 6pm.</p>
+                    <p>El día 12 de junio desde las 10am hasta las 6pm.</p>
                 </div>
                 <div>
                     <h3>¿Quién puede participar?</h3>

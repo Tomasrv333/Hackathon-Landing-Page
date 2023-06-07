@@ -1,9 +1,10 @@
 import figureInfo2 from "../../assets/figures/figureInfo2.svg";
 import figureBanner from "../../assets/TaxiBanner.svg";
+import iconLocation from "../../assets/icons/Location.svg";
 import Clock from "../../components/Countdown";
 
 const Banner = () => {
-    let deadline = "June, 10, 2023";
+    let deadline = "June, 12, 2023";
 
   return (
     <div id="banner" className='d-flex'>
@@ -22,10 +23,10 @@ const Banner = () => {
             <h1>Hackathon 2023</h1>
             <div className="banner__info-gadgets d-flex">
                 <div className="d-flex gap-3" >
-                    <img src="src/assets/icons/Location.svg" alt="" />
+                    <img src={iconLocation} alt="" />
                     <div>
                         <p className="m-0">Medellín / Colombia</p>
-                        <p className="m-0">Fecha: 10 / 06 / 2023</p>
+                        <p className="m-0">Fecha: 12 / 06 / 2023</p>
                     </div>
                 </div>
                 <div className="banner__info-gadgets--desktop">
