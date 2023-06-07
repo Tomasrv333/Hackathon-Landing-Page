@@ -71,7 +71,8 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   background-position: center;
   background-size: cover;
-  background-image: url("src/assets/icons/check.svg");
+  background-image: url("../src/assets/icons/check.svg");
+  background-image: url("./assets/icons/check.svg");
 }
 
 .clock {
