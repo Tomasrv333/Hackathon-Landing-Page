@@ -16,8 +16,8 @@ const Header = () => {
     <>
       <nav className="navbar">
         <div className="d-flex align-middle">
-            <a href="#banner" style={{ border: "none" }}>
-              <img className="navbar__logo" src={Logo} />
+            <a href="#banner" style={{ border: "none" }} aria-label="Back to start">
+              <img className="navbar__logo" src={Logo} alt="taxis-libres-logo"/>
             </a>
             <ul className="navbar__list d-flex">
               <li className="navbar__list-item"><a href="#info">Información</a></li>

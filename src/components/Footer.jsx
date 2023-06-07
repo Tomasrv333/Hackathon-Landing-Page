@@ -133,10 +133,10 @@ const Footer = () => {
             </div>
             <div className="footer__content-bottom">
                 <div className="footer__bottom-text">
-                    <img className="footer__text-img" src={Logo} />
-                    <a href="">Aviso legal página web</a>
-                    <a href="">Política de Tratamientos de Datos</a>
-                    <a href="">Aviso legal</a>
+                    <img className="footer__text-img" src={Logo} alt="taxis-libres-logo" />
+                    <a href="#">Aviso legal página web</a>
+                    <a href="#">Política de Tratamientos de Datos</a>
+                    <a href="#">Aviso legal</a>
                 </div>
                 <div className="footer__bottom-icons">
                     <img src={facebookIcon} alt="facebook" />
