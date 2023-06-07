@@ -2,7 +2,6 @@ import figureInfo1 from "../../assets/figures/figureInfo1.svg";
 import figureIcon4 from "../../assets/figures/figureIcon5.svg";
 import figureIcon from "../../assets/figures/figureIcon.svg";
 import figureBox from "../../assets/figures/figureBox.svg";
-import figureBoxMobile from "../../assets/figures/figureBox--mobile.svg";
 import facebookIcon from "../../assets/icons/socialMedia/facebookIcon.svg";
 import twitterIcon from "../../assets/icons/socialMedia/twitterIcon.svg";
 import instagramIcon from "../../assets/icons/socialMedia/instagramIcon.svg";
@@ -57,12 +56,7 @@ const Info = () => {
                     </div>
                 </div>
                 <div className="info__content-figure">
-                    <img className="info__figure" src={figureBox} alt="" />
-                    <img className="info__figure--mobile" src={figureBoxMobile} alt="" />
-                </div>
-                <div className="info__figure-text--mobile">
-                    <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
-                    <p className="info__content-text--mobile">Nuestro objetivo es desafiar a los participantes a superar sus límites, explorar nuevas tecnologías y trabajar en equipo para crear proyectos innovadores que puedan impactar positivamente en nuestra empresa y en la industria en general.</p>
+                    <img className="info__figure" src={figureBox} alt="box-figure" />
                 </div>
             </div>
         </div>
