@@ -43,7 +43,7 @@ const Info = () => {
                     <p>Ingenieros, programadores, diseñadores, comunicadores, analistas de datos y muchos más perfiles.</p>
                 </div>
                 <div className="info__figure-icon">
-                    <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
+                    <img src={figureIcon4} alt="figure" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
                 </div>
             </div>
             <div className="info__content-col">
@@ -51,7 +51,7 @@ const Info = () => {
                     <h3>¿Porqué una Hackathon?</h3>
                     <p>Al organizar una Hackathon, buscamos impulsar la resolución de problemas de manera ágil y eficiente, promoviendo la experimentación y el pensamiento fuera de lo común. </p>
                     <div className="info__figure-text">
-                        <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
+                        <img src={figureIcon4} alt="figure" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />
                         <p className="info__content-text--mobile">Nuestro objetivo es desafiar a los participantes a superar sus límites, explorar nuevas tecnologías y trabajar en equipo para crear proyectos innovadores que puedan impactar positivamente en nuestra empresa y en la industria en general.</p>
                     </div>
                 </div>

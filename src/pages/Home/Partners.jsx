@@ -20,10 +20,10 @@ const Partners = () => {
             <img src={partnerLogoAlMed} alt="Alcaldia de Medellín" />
         </div>
         <div className="partners__content--mobile">
-          <img src={partnersIcons} alt="" />
+          <img src={partnersIcons} alt="partners"/>
         </div>
         <div>
-          <img src={figureLines} alt="" />
+          <img src={figureLines} alt="lines"/>
         </div>
     </div>
   )
