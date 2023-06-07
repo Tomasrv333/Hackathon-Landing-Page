@@ -27,7 +27,7 @@ Pasos para instalar el proyecto demo
 
 ```bash
   git clone https://github.com/Tomasrv333/landing-page-hackathon.git
-  cd hackathon-landing-page
+  cd landing-page-hackathon
   git pull origin main
   npm install
   npm run dev
