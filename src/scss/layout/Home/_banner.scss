@@ -7,7 +7,7 @@
 
   @media only screen and ($--query-mobile) {
     .banner__info {
-      
+      padding: 7.625rem 2.5rem !important;
 
       .banner__info-span {
         margin-bottom: 0.625rem;
@@ -53,7 +53,7 @@
       align-items: center;
       width: 100vw;
       text-align: center;
-      padding: 7.625rem 3.75rem;
+      padding: 7.625rem 5.625rem;
       padding-top: 10.125rem;
 
       .banner__info-gadgets {

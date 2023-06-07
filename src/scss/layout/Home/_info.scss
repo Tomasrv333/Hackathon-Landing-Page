@@ -46,7 +46,7 @@
 
   @media only screen and ($--query-mobile) {
     width: 100%;
-    padding: 0 1.875rem;
+    padding: 0 2.5rem !important;
 
     .info__content {
       text-align: start !important;
