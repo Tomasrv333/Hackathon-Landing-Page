@@ -11,6 +11,10 @@
         color: $--color-primary;
         text-align: center;
       }
+
+      p {
+        font-weight: 600;
+      }
   
       span {
         font-weight: 800;
@@ -22,7 +26,6 @@
       
       p {
         margin: 1.875rem 0;
-        font-weight: 600;
       }
     }
   }
