@@ -11,7 +11,7 @@ El siguiente proyecto es una Landing Page ficticia de la Hackathon que realiza l
 - Un footer diseñado a partir del footer original con el que cuenta la empresa en su paginá oficial.
 
 Puedes ver el demo del proyecto en el siguiente link de despliegue:
-https://hackathon2023-taxislibres.netlify.app/
+- https://hackathon2023-taxislibres.netlify.app/
 
 # Documentación
 
