@@ -22,7 +22,7 @@ footer {
       }
     }
 
-    @media only screen and ($--query-mobile) {
+    @media only screen and ($--query-tablet) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -119,6 +119,10 @@ footer {
   }
 
   @media only screen and ($--query-mobile) {
+    
+  }
+
+  @media only screen and ($--query-tablet) {
     display: none;
   }
 

@@ -5,7 +5,6 @@
   padding: 12.5rem 0;
   background-position: center;
   background-size: cover;
-  background-image: url("../src/assets/figures/formBackground.svg");
 
   form {
     width: 30.125rem;
@@ -15,7 +14,6 @@
 
   @media only screen and ($--query-mobile) {
     padding: 7.875rem 1.875rem;
-    background-image: url("../src/assets/formBackground--mobile.svg");
 
     form {
       width: 16.375rem;
@@ -35,5 +33,12 @@
         line-height: 20px;
       }
     }
+  }
+
+  @media only screen and ($--query-tablet) {
+    padding: 7.875rem 5.625rem;
+  }
+
+  @media only screen and ($--query-desktop) {
   }
 }

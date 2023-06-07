@@ -24,10 +24,6 @@
             margin: 0;
         }
 
-        .navbar__list {
-            display: none !important;
-        }
-
         .navbar__list--mobile {
             position: absolute;
             top: 82px;
@@ -54,10 +50,17 @@
                 }
             }
         }
+    }
+
+    @media only screen and ($--query-tablet) {
+        .navbar__list {
+            display: none !important;
+        }
 
         .navbar__btn {
             display: none;
         }
+        
         .navbar__menu {
             display: block;
         }

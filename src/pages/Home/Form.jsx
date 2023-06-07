@@ -1,7 +1,8 @@
+import backgroundForm from "../../assets/figures/formBackground.svg";
 
 const Form = () => {
   return (
-    <div id="form">
+    <div id="form" style={{ backgroundImage: `url(${backgroundForm})` }}>
         <h2 style={{ marginBottom: "1.875rem" }}>Formulario de inscripción</h2>
         <form action="">
             <div className="form__input--mobile d-flex justify-content-between" style={{ gap: "1.875rem" }}>

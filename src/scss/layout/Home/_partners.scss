@@ -20,14 +20,26 @@
       margin: 0 !important;
       text-align: start;
     }
+  }
+
+  @media only screen and ($--query-tablet) {
+    .partners__content {
+      display: none;
+    }
 
     .partners__content--mobile {
       width: 100%;
       padding: 3.75rem 0;
 
       img {
-        width: 100%;
+        max-width: 70%;
       }
+    }
+  }
+
+  @media only screen and ($--query-desktop) {
+    .partners__content--mobile {
+      display: none;
     }
   }
 }

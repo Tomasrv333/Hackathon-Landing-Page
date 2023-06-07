@@ -49,7 +49,7 @@ const Info = () => {
             </div>
             <div className="info__content-col">
                 <div className="info__content-text">
-                    <h2>¿Porqué una Hackathon?</h2>
+                    <h3>¿Porqué una Hackathon?</h3>
                     <p>Al organizar una Hackathon, buscamos impulsar la resolución de problemas de manera ágil y eficiente, promoviendo la experimentación y el pensamiento fuera de lo común. </p>
                     <div className="info__figure-text">
                         <img src={figureIcon4} alt="" style={{ maxWidth: "69px", marginTop: "1.875rem" }} />

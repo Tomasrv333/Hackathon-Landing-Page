@@ -1,4 +1,5 @@
 import figureInfo2 from "../../assets/figures/figureInfo2.svg";
+import figureBanner from "../../assets/TaxiBanner.svg";
 import Clock from "../../components/Countdown";
 
 const Banner = () => {
@@ -19,7 +20,7 @@ const Banner = () => {
         <div className="banner__info">
             <span className="banner__info-span">¡Convierte tus ideas en innovación!</span>
             <h1>Hackathon 2023</h1>
-            <div className="banner__info-gadgets d-flex justify-content-between">
+            <div className="banner__info-gadgets d-flex">
                 <div className="d-flex gap-3" >
                     <img src="src/assets/icons/Location.svg" alt="" />
                     <div>
@@ -41,7 +42,7 @@ const Banner = () => {
             </div>
         </div>
         <div className="banner__vector">
-            <img className="banner__vector-taxi" src="src/assets/TaxiBanner.svg" alt="taxi" />
+            <img className="banner__vector-taxi" src={figureBanner} alt="taxi" />
         </div>
     </div>
   )

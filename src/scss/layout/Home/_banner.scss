@@ -6,33 +6,20 @@
   }
 
   @media only screen and ($--query-mobile) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    .banner__side {
-      display: none;
-    }
-
     .banner__info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100vw;
-      text-align: center;
-      padding: 7.625rem 1.875rem;
-      padding-top: 10.125rem;
+      
 
       .banner__info-span {
         margin-bottom: 0.625rem;
       }
 
       .banner__info-text {
+        margin: 0;
         margin-bottom: 1.875rem;
       }
 
       .banner__info-gadgets {
-        margin: 1.25rem 0;
+        margin: 1.875rem 0;
 
         .banner__info-gadgets--desktop {
           display: none !important;
@@ -44,15 +31,55 @@
         margin-bottom: 5.625rem;
       }
 
-      .banner__info-figure--mobile {
-        margin-top: 1.875rem;
+      .banner__info-gadgets--mobile {
+        display: block !important;
       }
+    }
+  }
+  
+  @media only screen and ($--query-tablet) {
+
+    .banner__side {
+      display: none;
     }
 
     .banner__vector {
       display: none;
     }
-  } 
+
+    .banner__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      text-align: center;
+      padding: 7.625rem 3.75rem;
+      padding-top: 10.125rem;
+
+      .banner__info-gadgets {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 1.875rem 0;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .banner__info-gadgets--desktop {
+        padding-left: 1.875rem;
+      }
+
+      .banner__info-gadgets--mobile {
+        display: none;
+      }
+
+      .banner__info-text {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
 
   @media only screen and ($--query-desktop) {
     padding: 0 5.625rem;
@@ -98,6 +125,7 @@
     .banner__info {
       width: 28.75rem;
       padding: 7.5rem 0;
+      z-index: 2;
 
       .banner__info-span {
         font-size: 14px;
@@ -112,16 +140,18 @@
       }
   
       .banner__info-gadgets {
+        display: flex;
+        justify-content: space-between;
         margin: 1.25rem 0;
-
-        .banner__info-gadgets--mobile {
-          display: none;
-        }
   
         p {
           font-size: 14px;
           font-weight: 300;
         }
+      }
+
+      .banner__info-gadgets--mobile {
+        display: none;
       }
     }
 
@@ -129,6 +159,7 @@
       position: absolute;
       top: 48px;
       right: 90px;
+      z-index: 1;
     }
   }
 }

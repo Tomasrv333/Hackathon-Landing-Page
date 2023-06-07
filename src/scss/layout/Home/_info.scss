@@ -47,15 +47,9 @@
   @media only screen and ($--query-mobile) {
     width: 100%;
     padding: 0 1.875rem;
-    
-    .info__side {
-      display: none;
-    }
 
     .info__content {
-      width: 100%;
-      flex-direction: column;
-      padding: 0;
+      text-align: start !important;
     }
 
     .info__content-col {
@@ -71,20 +65,19 @@
     .info__content-text {
       width: 77.5%;
       position: absolute;
-      top: 3%;
+      top: 13%;
       left: 2.1rem;
+
+      .info__figure-text {
+        display: none ;
+        img {
+          display: none;
+        }
+      }
     }
 
     .info__content-text--mobile {
       margin-top: 3.75rem;
-    }
-
-    .info__figure-icon {
-      display: none;
-    }
-
-    .info__figure-text {
-      display: none;
     }
 
     .info__figure-text--mobile {
@@ -96,6 +89,66 @@
     }
 
     .info__figure {
+      display: block;
+    }
+
+    
+  }
+
+  @media only screen and ($--query-tablet) {
+    padding: 0 5.625rem;
+    margin-bottom: 7.5rem;
+
+    .info__content {
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: 1.875rem;
+      }
+
+      .info__content-text {
+        margin-top: 3.625rem;
+
+        p {
+          font-size: 18px;
+        }
+
+        .info__figure-text {
+          img {
+            display: none;
+          }
+        }
+      }
+
+      .info__content-col {
+        margin: 0;
+
+        .info__figure-icon {
+          display: flex;
+          justify-content: center;
+        }
+
+        .info__figure-text--mobile {
+          display: none;
+        }
+      }
+    }
+
+    .info__content-figure {
+      display: none;
+
+      .info__figure--mobile {
+        display: none;
+      }
+    }
+
+    .info__side {
       display: none;
     }
   }
@@ -112,6 +165,21 @@
       right: 0;
       left: 5rem;
       bottom: 0;
+
+      .info__figure-text {
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    .info__figure--mobile {
+      display: none;
+    }
+
+    .info__figure-text--mobile {
+      display: none;
     }
   }
 }
