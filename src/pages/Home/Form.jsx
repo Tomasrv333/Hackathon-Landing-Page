@@ -8,7 +8,7 @@ const Form = () => {
             <div className="form__input--mobile d-flex justify-content-between" style={{ gap: "1.875rem" }}>
                 <div className="d-flex flex-column">
                     <label htmlFor="nombre">Nombre</label>
-                    <input id="name" type="text" />
+                    <input id="nombre" type="text" />
 
                 </div>
                 <div className="d-flex flex-column">
@@ -27,8 +27,8 @@ const Form = () => {
             <input id="perfil" type="text" />
 
             <div className="form__checkbox d-flex gap-3" style={{ alignItems: "center", marginBottom: "3.75rem" }}>
-                <input className="m-0" type="checkbox"/>
-                <p className="m-0" style={{ opacity: "70%" }}>Quiero seguir recibiendo actualizaciones de la Hackathon a mi correo electronico.</p>
+                <input id="checkbox" className="m-0" type="checkbox"/>
+                <label htmlFor="checkbox" className="form__last-label m-0" style={{ opacity: "70%" }}>Quiero seguir recibiendo actualizaciones de la Hackathon a mi correo electronico.</label>
             </div>
 
             <button className="form__btn btn--primary mx-auto">Inscribirme</button>

@@ -11,7 +11,8 @@
     display: flex;
     flex-direction: column;
 
-    p {
+    .form__last-label {
+      color: white;
       font-size: 14px;
       line-height: 20px;
     }
@@ -34,7 +35,7 @@
         margin-bottom: 1.25rem !important;
       }
 
-      p {
+      .form__last-label {
         font-size: 12px;
         line-height: 20px;
       }
