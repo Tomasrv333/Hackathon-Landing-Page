@@ -36,7 +36,7 @@ Pasos para instalar el proyecto demo
 # Tecnologías
 
 - Vite
-- HTML
+- Bootstrap
 - Scss
 - React
 
