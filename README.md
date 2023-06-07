@@ -26,7 +26,7 @@ Puedes visualizar mas en detalle sobre el proceso de diseño en:
 Pasos para instalar el proyecto demo 
 
 ```bash
-  git clone https://github.com/Tomasrv333/Hackathon-Landing-Page.git
+  git clone https://github.com/Tomasrv333/landing-page-hackathon.git
   cd hackathon-landing-page
   git pull origin main
   npm install
